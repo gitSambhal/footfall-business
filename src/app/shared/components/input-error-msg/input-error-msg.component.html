@@ -1,0 +1,5 @@
+<ng-container *ngIf="input && isShowError()">
+    <p class="caption status-danger" *ngIf="input.errors?.required">
+        input is required!
+    </p>
+</ng-container>

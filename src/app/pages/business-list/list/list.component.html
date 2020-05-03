@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-12">
+
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-md-12 col-lg-6 col-xxxl-6" >
+    <nb-card class="list-card" size="small" [nbSpinner]="loading.loadList" nbSpinnerStatus="danger">
+      <nb-card-header>
+        <strong>Business</strong>
+        <div class="pull-right">
+          <button nbButton status="primary" (click)="getList()">get data</button>
+
+        </div>
+      </nb-card-header>
+      <nb-list>
+        <nb-list-item *ngFor="let c of data">
+          {{ c.title }}
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+  </div>
+</div>
